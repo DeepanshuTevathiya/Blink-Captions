@@ -67,44 +67,6 @@ Blink&Captions/
 ├── .gitignore
 └── README.md
 ```
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/blink-captions.git
-cd blink-captions
-```
-
-### Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### Activate Environment
-
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-
-```bash
-source venv/bin/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ## 🔑 Environment Variables
