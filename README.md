@@ -6,7 +6,6 @@ Upload an image and instantly receive AI-generated captions tailored for differe
 
 > 📸 Project Screenshot
 
-<!-- Replace with your screenshot -->
 
 ![Blink&Captions Screenshot](static/images/project-screenshot.png)
 
@@ -21,7 +20,6 @@ Upload an image and instantly receive AI-generated captions tailored for differe
   - 🔍 SEO Optimized
   - ♿ Alt Text (WCAG-friendly)
 - Modern and responsive UI
-- Drag-and-drop image upload
 - Powered by OpenAI GPT-4.1 Vision
 - Useful for content creators, marketers, bloggers, and accessibility workflows
 
