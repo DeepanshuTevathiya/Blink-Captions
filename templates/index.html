@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink&Captions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 class="main-heading">Blink&Captions</h1>
+
+    <div class="container">
+        <h2>Upload Image to generate caption</h2>
+
+        <form id="img-caption" method="POST" enctype="multipart/form-data">
+            <label for="image-upload" class="drop-box">
+                <img id="preview" style="display:none;">
+                <p>Drag & Drop Image Here</p>
+                <p>or Click to Upload</p>
+            </label>
+
+            <input id="image-upload" type="file" name="image" accept="image/*" hidden>
+
+            <button id="generate-btn" type="submit">Generate captions</button>
+        </form>
+
+        {% if msg %}
+            <p class="error-msg">{{ msg }}</p>
+        {% endif %}
+
+        {% if captions %}
+            <div class="caption-box">
+                <p class="caption-card"><span class="label">Formal</span> {{ captions["formal"] }}</p>
+                <p class="caption-card"><span class="label">Casual</span> {{ captions["casual"] }}</p>
+                <p class="caption-card"><span class="label">SEO</span> {{ captions["seo"] }}</p>
+                <p class="caption-card"><span class="label">Alt-Text</span> {{ captions["alt_text"] }}</p>
+            </div>
+        {%else%}
+            <p class="upload-msg">Upload an image to get captions.</p>
+        {% endif %}
+
+        <footer>Made with ❤️ by Deepanshu Tevathiya</footer>
+    </div>
+    
+    <script>
+        const input = document.getElementById("image-upload");
+        const preview = document.getElementById("preview");
+
+        input.addEventListener("change", function () {
+            if (this.files[0]) {
+                preview.src = URL.createObjectURL(this.files[0]);
+                preview.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
