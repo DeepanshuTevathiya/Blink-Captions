@@ -8,7 +8,7 @@ Upload an image and instantly receive AI-generated captions tailored for differe
 
 <!-- Replace with your screenshot -->
 
-![Blink&Captions Screenshot](images/project-screenshot.png)
+![Blink&Captions Screenshot](static/images/project-screenshot.png)
 
 ---
 
